@@ -52650,7 +52650,7 @@ function($timeout) {
             listCtrl.canSwipeItems(!isShown);
 
             $element.children().toggleClass('list-left-editing', isShown);
-            $element.toggleClass('disable-pointer-events', isShown);
+            //$element.toggleClass('disable-pointer-events', isShown);
 
             var deleteButton = jqLite($element[0].getElementsByClassName('item-delete'));
             setButtonShown(deleteButton, listCtrl.showDelete);
@@ -52666,7 +52666,7 @@ function($timeout) {
             listCtrl.canSwipeItems(!isShown);
 
             $element.children().toggleClass('list-right-editing', isShown);
-            $element.toggleClass('disable-pointer-events', isShown);
+            //$element.toggleClass('disable-pointer-events', isShown);
 
             var reorderButton = jqLite($element[0].getElementsByClassName('item-reorder'));
             setButtonShown(reorderButton, listCtrl.showReorder);
